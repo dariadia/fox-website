@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 export const Read = () => {
   return (
     <div>
@@ -5,7 +7,7 @@ export const Read = () => {
       <ul className="articles_list">
         {ARTICLES.map(article =>
           <li key={article.title}>
-            <a href={`${article.link}`} target="_blank">{article.title}</a>
+            <Link to={`/read${article.link}`} target="_blank">{article.title}</Link>
           </li>
         )}
       </ul>
