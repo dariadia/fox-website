@@ -4,11 +4,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+ul {
+  list-style: none;
+  margin-left: -20px;
 }
 
 .navigation_top {
@@ -17,10 +18,12 @@ code {
   right: 0;
   display: block;
   background-color: rgba(0, 0, 255, 0.172);
-  width: 150px;
+  width: 160px;
   border-bottom-left-radius: 24px;
+  padding: 8px 14px 8px 8px;
+  box-sizing: border-box;
 }
 
 main {
-  max-width: calc(100% - 150px);
+  max-width: calc(100% - 160px);
 }
