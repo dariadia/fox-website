@@ -223,3 +223,10 @@ a {
   line-height: 36px;
   color: var(--lighter);
 }
+
+.articles_list {
+  list-style: none;
+  margin-left: -20px;
+  text-align: center;
+  line-height: 32px;
+}
