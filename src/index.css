@@ -30,7 +30,7 @@ a:hover {
   color: var(--lighter);
 }
 
-.navigation__list > li > a {
+a {
   text-decoration: none;
   color: white;
   font-weight: 500;
@@ -103,7 +103,7 @@ a:hover {
   }
 }
 
-main {
+.main {
   max-width: calc(100% - 160px);
 }
 
@@ -113,7 +113,7 @@ main {
 }
 
 @media screen and (max-width:600px) { 
-  main {
+  .main {
     max-width: calc(100% - 24px);
   }
 }
@@ -137,4 +137,19 @@ h2 {
 
 .caption {
   margin: 16px 0;
+}
+
+.contact-item {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin: auto;
+  color: var(--foxy);
+  margin-top: 32px;
+}
+
+.about_wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 48px;
 }
