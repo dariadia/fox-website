@@ -1,7 +1,7 @@
 export const Practice = () => {
   return (
     <div>
-      <h2 className="lead-in">Практика</h2>
+      <h2 className="merriweather-bold lead-in">Практика</h2>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export const Read = () => {
   return (
     <div>
-      <h2 className="lead-in">Статьи</h2>
+      <h2 className="merriweather-bold lead-in">Статьи</h2>
       <ul className="articles_list">
         {ARTICLES.map(article =>
           <li key={article.title}>

@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <div className="main">
-      <h2 className="lead-in">Главная</h2>
+      <h2 className="merriweather-bold lead-in">Главная</h2>
       <p>
         Какой-то вводный текст. Текст занимает строки две и рассказывает о чем-то, какой-то вводный текст.
       </p>
