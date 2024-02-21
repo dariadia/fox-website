@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export const Navigation = () => (<ul>
+export const Navigation = () => (<ul className="navigation__list">
   <li>
     <Link to="/">Главная</Link>
   </li>

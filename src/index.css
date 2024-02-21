@@ -31,7 +31,7 @@ a {
 
 a:hover {
   cursor: pointer;
-  transition: 0.2 all;
+  transition: 0.2s all;
   color: var(--lighter);
 }
 
@@ -67,12 +67,23 @@ a:hover {
     font-weight: bold;
   }
   .navigation__mobile {
-    
+    position: absolute;
+    z-index: 2;
+    height: 90%;
+    width: 90%;
+    background-color: var(--foxy);
+    border-radius: 8px;
+    font: 24px/42px bold;
   }
 }
 
 main {
   max-width: calc(100% - 160px);
+}
+
+.navigation__list > li > a {
+  width: 100%;
+  display: block;
 }
 
 @media screen and (max-width:600px) { 

@@ -6,6 +6,9 @@ export const Layout = () => {
   const [isMenuOpen, setMenuOpen] = useState(false)
 
   return (<>
+    {isMenuOpen ? <div className="navigation__mobile">
+      <Navigation />
+    </div> : null}
     <header>
       <h1>Название сайта</h1>
       <p>
@@ -16,11 +19,8 @@ export const Layout = () => {
           <div className="nav_controls" onClick={() => setMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? 'Закрыть' : 'Меню'}
           </div>
-          {isMenuOpen ? <div className="navigation__mobile">
           <Navigation />
-          </div> : null}
-          <Navigation />
-          </nav>
+        </nav>
       </div>
       <hr />
     </header>
