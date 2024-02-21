@@ -32,7 +32,7 @@ a {
 a:hover {
   cursor: pointer;
   transition: 0.2 all;
-  color: var(--lighter)
+  color: var(--lighter);
 }
 
 .navigation_top {
@@ -48,6 +48,79 @@ a:hover {
   line-height: 24px;
 }
 
+@media screen and (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label > span:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 12px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label > span:nth-child(2) {
+    display: none;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label > span:nth-child(3) {
+    transform: rotate(145deg);
+    margin-top: -12px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:not(:checked) ~ .nav-btn > label {
+    transform: rotate(0);
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:not(:checked) ~ .nav-btn > span:nth-child(2) {
+    display: inline-block;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 4px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
 main {
   max-width: calc(100% - 160px);
+}
+
+@media screen and (max-width:600px) { 
+  main {
+    max-width: calc(100% - 24px);
+  }
 }
