@@ -1,7 +1,8 @@
+import { noop } from "lodash"
 import { Link } from "react-router-dom"
 
 export const Navigation = ({ onClick }: { onClick?: () => void }) =>
-(<ul className="navigation__list" onClick={onClick && onClick}>
+(<ul className="navigation__list" onClick={onClick ? onClick : noop}>
   <li>
     <Link to="/">Главная</Link>
   </li>
