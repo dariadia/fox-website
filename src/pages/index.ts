@@ -1,3 +1,7 @@
 export { Home } from './HomePage'
 export { About } from './AboutPage'
 export { NoMatch } from './404Page'
+export { Learn } from './LearnPage'
+export { Parlour } from './ParlourPage'
+export { Practice } from './PracticePage'
+export { Read } from './ReadPage'
