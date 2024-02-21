@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 
-export const Navigation = () => (<ul className="navigation__list">
+export const Navigation = ({ onClick }: { onClick?: () => void }) =>
+(<ul className="navigation__list" onClick={onClick && onClick}>
   <li>
     <Link to="/">Главная</Link>
   </li>

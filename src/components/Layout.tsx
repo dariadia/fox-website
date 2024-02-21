@@ -7,7 +7,7 @@ export const Layout = () => {
 
   return (<>
     {isMenuOpen ? <div className="navigation__mobile">
-      <Navigation />
+      <Navigation onClick={() => setMenuOpen(!isMenuOpen)} />
     </div> : null}
     <header>
       <h1>Название сайта</h1>
@@ -20,6 +20,7 @@ export const Layout = () => {
             {isMenuOpen ? 'Закрыть' : 'Меню'}
           </div>
           <Navigation />
+          <div className="art_tail"/>
         </nav>
       </div>
       <hr />
