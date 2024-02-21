@@ -3,12 +3,14 @@ import { Link, Outlet } from "react-router-dom"
 import { Navigation } from "./Navigation"
 import Cookies from "universal-cookie"
 import { COOKIE_NAME } from "../data"
+import { Popup } from "./Popup"
 
-export const Layout = ({ hasPremiumAccess }: { hasPremiumAccess: boolean }) => {
+export const Layout = ({ hasPremiumAccess, isPopupShown }: { hasPremiumAccess: boolean, isPopupShown: boolean }) => {
   const [isMenuOpen, setMenuOpen] = useState(false)
   const cookies = new Cookies()
 
   return (<>
+    {isPopupShown ? <Popup /> : null}
     {isMenuOpen ? <div className="navigation__mobile">
       <Navigation onClick={() => setMenuOpen(!isMenuOpen)} />
     </div> : null}

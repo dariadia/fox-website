@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Layout hasPremiumAccess={hasPremiumAccess} />}>
+      <Route path="/" element={<Layout isPopupShown={isPopupShown} hasPremiumAccess={hasPremiumAccess} />}>
         <Route index element={<Home />} />
         <Route path="read" element={<Read hasPremiumAccess={hasPremiumAccess} showPopup={showPopup} />} />
         <Route path="practice" element={<Practice />} />
