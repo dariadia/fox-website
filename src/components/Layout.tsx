@@ -1,33 +1,26 @@
+import { useState } from "react"
 import { Link, Outlet } from "react-router-dom"
+import { Navigation } from "./Navigation"
 
 export const Layout = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false)
+
   return (<>
     <header>
       <h1>Название сайта</h1>
       <p>
-        Какой-то вводный текст.
+        Какой-то вводный текст. Текст занимает строки две и рассказывает о чем-то, какой-то вводный текст.
       </p>
       <div className="nav">
-        <input type="checkbox" id="nav-check" />
-        <div className="nav-btn">
-          <label htmlFor="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <nav className="navigation_top nav-links">
-          <ul>
-            <li>
-              <Link to="/">Главная</Link>
-            </li>
-            <li>
-              <Link to="/about">Обо мне</Link>
-            </li>
-            <li>
-              <Link to="/prices">Услуги и цены</Link>
-            </li>
-          </ul></nav>
+        <nav className="navigation_top">
+          <div className="nav_controls" onClick={() => setMenuOpen(!isMenuOpen)}>
+            {isMenuOpen ? 'Закрыть' : 'Меню'}
+          </div>
+          {isMenuOpen ? <div className="navigation__mobile">
+          <Navigation />
+          </div> : null}
+          <Navigation />
+          </nav>
       </div>
       <hr />
     </header>
