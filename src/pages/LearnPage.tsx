@@ -1,7 +1,7 @@
 export const Learn = () => {
   return (
     <div>
-      <h2>Обучение</h2>
+      <h2 className="lead-in">Обучение</h2>
     </div>
   )
 }

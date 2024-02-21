@@ -4,6 +4,68 @@
   --grey: #151515;
 }
 
+.caveat-400 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caveat-700 {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-light {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.merriweather-light-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.merriweather-regular-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.merriweather-bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.merriweather-bold-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.merriweather-black-italic {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -126,17 +188,13 @@ a {
 }
 
 .avatar.fox {
-display: block;
-margin: 48px auto 24px;
-}
-
-h2 {
-  text-align: center;
-  margin: 24px 0;
+  display: block;
+  margin: 48px auto 24px;
 }
 
 .caption {
   margin: 16px 0;
+  font-size: 22px;
 }
 
 .contacts-all {
@@ -156,4 +214,12 @@ h2 {
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 48px;
+}
+
+.lead-in {
+  text-align: center;
+  margin: 24px 0;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--lighter);
 }

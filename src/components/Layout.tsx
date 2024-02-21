@@ -10,8 +10,8 @@ export const Layout = () => {
       <Navigation onClick={() => setMenuOpen(!isMenuOpen)} />
     </div> : null}
     <header>
-      <h1>Название сайта</h1>
-      <div className="caption">
+      <h1 className="merriweather-bold">Название сайта</h1>
+      <div className="caption caveat-400">
         Короткий текст (caption)
       </div>
       <div className="nav">
