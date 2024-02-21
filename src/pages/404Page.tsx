@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 export const NoMatch = () => {
   return (
     <div>
-      <h2>Nothing to see here!</h2>
+      <h2>Такой страницы нет!</h2>
       <p>
-        <Link to="/">Go to the home page</Link>
+        <Link to="/">Вернуться на главную</Link>
       </p>
     </div>
   )
