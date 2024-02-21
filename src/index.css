@@ -18,9 +18,9 @@ code {
   display: block;
   background-color: rgba(0, 0, 255, 0.172);
   width: 150px;
+  border-bottom-left-radius: 24px;
 }
 
-.section_main {
-  overflow: auto;
-  height: fit-content;
+main {
+  max-width: calc(100% - 150px);
 }
