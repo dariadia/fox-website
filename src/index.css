@@ -139,13 +139,17 @@ h2 {
   margin: 16px 0;
 }
 
+.contacts-all {
+  margin-top: 32px;
+}
+
 .contact-item {
   text-align: center;
   font-weight: bold;
   display: block;
   margin: auto;
   color: var(--foxy);
-  margin-top: 32px;
+  margin: 12px;
 }
 
 .about_wrapper {
