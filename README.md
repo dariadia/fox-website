@@ -3,6 +3,6 @@
 to run:
 
 ```
-npm I
+npm i
 npm run start
 ```
