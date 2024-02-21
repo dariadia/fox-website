@@ -10,7 +10,7 @@ export const Layout = () => {
       <div className="nav">
         <input type="checkbox" id="nav-check" />
         <div className="nav-btn">
-          <label for="nav-check">
+          <label htmlFor="nav-check">
             <span></span>
             <span></span>
             <span></span>
