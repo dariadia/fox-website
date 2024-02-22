@@ -7,8 +7,8 @@ export const Popup = () => <div className="popup_wrapper">
     <input type="hidden" name="label" value="застатьи"/>
     <input type="hidden" name="quickpay-form" value="button"/>
     <input type="hidden" name="sum" value="2000" data-type="number"/>
-    <label><input type="radio" name="paymentType" value="PC"/>ЮMoney</label>
-    <label><input type="radio" name="paymentType" value="AC"/>Банковской картой</label>
-    <input type="submit" value="Перевести"/>
+    <label className="payment_label"><input type="radio" name="paymentType" value="PC"/>ЮMoney</label>
+    <label className="payment_label"><input type="radio" name="paymentType" value="AC"/>Банковской картой</label>
+    <input className="payment_button" type="submit" value="Оплатить"/>
 </form>
 </div>
