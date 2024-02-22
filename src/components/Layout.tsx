@@ -20,7 +20,6 @@ export const Layout = ({ hasPremiumAccess, isPopupShown, showPopup }: { hasPremi
       <div className="caption caveat-400">
         Короткий текст (caption)
       </div>
-      {hasPremiumAccess ? null : <button onClick={() => cookies.set(COOKIE_NAME, 'true', { path: '/' })}>"купить" премиум доступ</button>}
       <div className="nav">
         <nav className="navigation_top">
           <div className="nav_controls" onClick={() => setMenuOpen(!isMenuOpen)}>
