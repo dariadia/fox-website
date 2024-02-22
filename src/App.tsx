@@ -16,6 +16,7 @@ export default function App() {
       <Route path="/" element={<Layout showPopup={showPopup} isPopupShown={isPopupShown} hasPremiumAccess={hasPremiumAccess} />}>
         <Route index element={<Home />} />
         <Route path="read" element={<Read hasPremiumAccess={hasPremiumAccess} showPopup={showPopup} />} />
+        <Route path="read/:param" element={<Learn />} />
         <Route path="practice" element={<Practice />} />
         <Route path="learn" element={<Learn />} />
         <Route path="parlour" element={<Parlour />} />
