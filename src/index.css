@@ -277,6 +277,11 @@ a {
 
 .parlour-item {
   max-width: 300px;
+  margin: 0 48px 48px 0;
+}
+
+.parlour-item > h6 {
+  font-size: 14px;
 }
 
 .parlour-item > img {
