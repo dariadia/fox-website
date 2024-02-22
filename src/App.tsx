@@ -7,13 +7,13 @@ import { COOKIE_NAME } from "./data"
 
 export default function App() {
   const [isPopupShown, setPopupShown] = useState(false)
-  const showPopup = () => setPopupShown(!isPopupShown)
+  const showPopup = (val?: boolean) => setPopupShown(val || !isPopupShown)
   const cookies = new Cookies()
   const hasPremiumAccess = cookies.get(COOKIE_NAME)
 
   return (
     <Routes>
-      <Route path="/" element={<Layout isPopupShown={isPopupShown} hasPremiumAccess={hasPremiumAccess} />}>
+      <Route path="/" element={<Layout showPopup={showPopup} isPopupShown={isPopupShown} hasPremiumAccess={hasPremiumAccess} />}>
         <Route index element={<Home />} />
         <Route path="read" element={<Read hasPremiumAccess={hasPremiumAccess} showPopup={showPopup} />} />
         <Route path="practice" element={<Practice />} />

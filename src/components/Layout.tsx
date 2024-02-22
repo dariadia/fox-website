@@ -4,8 +4,9 @@ import { Navigation } from "./Navigation"
 import Cookies from "universal-cookie"
 import { COOKIE_NAME } from "../data"
 import { Popup } from "./Popup"
+import { noop } from "lodash"
 
-export const Layout = ({ hasPremiumAccess, isPopupShown }: { hasPremiumAccess: boolean, isPopupShown: boolean }) => {
+export const Layout = ({ hasPremiumAccess, isPopupShown, showPopup }: { hasPremiumAccess: boolean, isPopupShown: boolean, showPopup: (val?: boolean) => void }) => {
   const [isMenuOpen, setMenuOpen] = useState(false)
   const cookies = new Cookies()
 
@@ -14,7 +15,7 @@ export const Layout = ({ hasPremiumAccess, isPopupShown }: { hasPremiumAccess: b
     {isMenuOpen ? <div className="navigation__mobile">
       <Navigation onClick={() => setMenuOpen(!isMenuOpen)} />
     </div> : null}
-    <header>
+    <header onClick={() => isPopupShown ? showPopup(false) : noop}>
       <h1 className="merriweather-bold">Название сайта</h1>
       <div className="caption caveat-400">
         Короткий текст (caption)
@@ -31,7 +32,7 @@ export const Layout = ({ hasPremiumAccess, isPopupShown }: { hasPremiumAccess: b
       </div>
       <hr />
     </header>
-    <main>
+    <main onClick={() => isPopupShown ? showPopup(false) : noop}>
       <Outlet />
     </main>
   </>
