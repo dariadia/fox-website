@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { ARTICLES } from "../data"
 
 export const Read = ({ showPopup, hasPremiumAccess }: { showPopup: () => void, hasPremiumAccess: boolean }) => {
   return (
@@ -16,11 +17,3 @@ export const Read = ({ showPopup, hasPremiumAccess }: { showPopup: () => void, h
     </div>
   )
 }
-
-const ARTICLES = [
-  { title: 'Название статьи есть', link: '/some-link', isPremium: true },
-  { title: 'Название статьи 2', link: '/some-link' },
-  { title: 'Название статьи 3', link: '/some-link' },
-  { title: 'Название статьи 4', link: '/some-link' },
-  { title: 'Название статьи тут', link: '/some-link' },
-]
