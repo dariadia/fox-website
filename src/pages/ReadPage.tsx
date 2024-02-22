@@ -7,7 +7,7 @@ export const Read = ({ showPopup, hasPremiumAccess }: { showPopup: () => void, h
       <ul className="articles_list">
         {ARTICLES.map(article =>
           <li key={article.title} >
-            {(hasPremiumAccess || !article.isPremium) ? <Link to={`/read${article.link}`} target="_blank">{article.title}</Link>
+            {(hasPremiumAccess || !article.isPremium) ? <Link to={`/read${article.link}`}>{article.title}</Link>
               : <span className="locked-article" onClick={showPopup}>{article.title}</span>}
             {(article.isPremium && !hasPremiumAccess) ? <span>{' '}&#128274;</span> : null}
           </li>
