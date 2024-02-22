@@ -269,3 +269,19 @@ a {
   background-color: var(--lighter);
   transition: 0.2s background-color;
 }
+
+.parlour-showcase {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parlour-item {
+  max-width: 300px;
+}
+
+.parlour-item > img {
+  border-radius: 4px;
+  max-width: 240px;
+  display: block;
+  margin: auto;
+}
