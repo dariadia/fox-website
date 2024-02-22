@@ -250,6 +250,7 @@ a {
 
 .payment_label {
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .payment_button {
