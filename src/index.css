@@ -166,6 +166,10 @@ a {
   }
 }
 
+main {
+  min-height: 100vh;
+}
+
 .main {
   max-width: calc(100% - 160px);
 }
