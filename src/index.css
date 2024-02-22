@@ -183,6 +183,9 @@ main {
   .main {
     max-width: calc(100% - 24px);
   }
+  .popup_wrapper {
+    width: 77%;
+  }
 }
 
 .avatar {
